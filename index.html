@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources — Check Before You Use — Swift AI Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <div class="topbar">
+    <span class="meta">AAI-E-MC1-S03-RES01 · MC1 / 1.3 · Not counted · PC 4.1–4.5, PC 5.1–5.4</span>
+    <select class="jump-select" id="jumpSelect" onchange="current=parseInt(this.value);render();"></select>
+  </div>
+
+  <!-- PAGE 0: Before you start -->
+  <div class="page active" data-page="0">
+    <div class="card" style="background:linear-gradient(135deg,#EAF7ED 0%,#FFF6E4 100%);border-color:#D9EEDD;">
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+        <div style="width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--leaf),var(--gold));display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div>
+          <p class="kicker" style="color:#B8790A;margin-bottom:2px;">Before you start</p>
+          <h2 style="margin-bottom:0;">Resources — Check Before You Use</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- flip card -->
+    <div class="flip-mini" onclick="this.querySelector('.flip-mini-inner').classList.toggle('flipped')">
+      <div class="flip-mini-inner">
+        <div class="flip-face flip-front">
+          <p style="margin:0;font-size:13px;font-weight:700;color:#0E5C39;">Tap to see why this page isn't a task ↻</p>
+        </div>
+        <div class="flip-face flip-back">
+          <p style="margin:0;font-size:13px;color:#E3D9F5;">This isn't a task to complete. It's a short list of free, credible places to go further on checking AI outputs — for whenever you want more than this course covers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="kicker" style="color:var(--navy);">What the colours mean</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <span class="badge article" style="font-size:11px;padding:6px 12px;">Article</span>
+        <span class="badge video" style="font-size:11px;padding:6px 12px;">Video</span>
+        <span class="badge govt" style="font-size:11px;padding:6px 12px;background:var(--gold-tint);">Government tool</span>
+      </div>
+
+      <p class="kicker" style="color:var(--purple);margin-top:18px;">How much time do you have?</p>
+      <select class="jump-select" id="timeSelect" style="background-color:#F3EEFC;border-color:#DDD0F5;color:var(--purple);" onchange="jumpByTime(this.value)">
+        <option value="">Choose and jump straight there…</option>
+        <option value="1">5 minutes or less → AI makers' own pages</option>
+        <option value="2">About 10 minutes → checking methods</option>
+        <option value="3">15 minutes or more → the deeper picks</option>
+        <option value="4">Just show me everything → quick reference</option>
+      </select>
+
+      <div class="caution-line" style="margin-top:18px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17a1.8 1.8 0 0 0 1.5 2.7h16a1.8 1.8 0 0 0 1.5-2.7L13.7 3.9a1.6 1.6 0 0 0-2.8 0z"/></svg>
+        <span>These are real, external websites — not part of this course. Never enter passwords, IDs, phone numbers or personal details on any site you visit, and check with your facilitator before opening links on a shared device.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 1: AI makers -->
+  <div class="page" data-page="1">
+    <div class="card">
+      <p class="kicker" style="color:var(--sky);">Straight from the AI makers</p>
+
+      <h2>3 official explanations of AI mistakes</h2>
+      <p>Real help-center articles from the companies that build these tools.</p>
+      <div class="rgrid">
+        <a class="rcard" href="https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth" target="_blank" rel="noopener">
+          <span class="badge article" style="background:var(--coral-tint);color:var(--coral);">Article</span>
+          <p class="rcard-title">Does ChatGPT tell the truth?</p>
+          <p class="rcard-provider">OpenAI Help Center · Beginner · 5 min</p>
+          <p class="rcard-why">Official, plain-language explainer of hallucination and how to verify answers.</p>
+          <div class="rcard-footer"><span>help.openai.com</span><span class="go" style="color:var(--coral);">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+        <a class="rcard" href="https://support.claude.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on" target="_blank" rel="noopener">
+          <span class="badge article" style="background:var(--purple-tint);color:var(--purple);">Article</span>
+          <p class="rcard-title">Claude's incorrect or misleading responses</p>
+          <p class="rcard-provider">Claude Help Center, Anthropic · Beginner · 4 min</p>
+          <p class="rcard-why">The same explanation from a second AI maker — this is how AI tools generally behave.</p>
+          <div class="rcard-footer"><span>support.claude.com</span><span class="go" style="color:var(--purple);">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+      </div>
+      <div class="rgrid single" style="margin-top:14px;">
+        <a class="rcard" href="https://support.google.com/websearch/answer/14901683?hl=en" target="_blank" rel="noopener">
+          <span class="badge article">Article</span>
+          <p class="rcard-title">AI Overviews in Google Search — how they work</p>
+          <p class="rcard-provider">Google Search Help · Beginner · 5 min</p>
+          <p class="rcard-why">AI-written summaries now appear in ordinary search too — this shows how to open the sources behind them.</p>
+          <div class="rcard-footer"><span>support.google.com</span><span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: Methods -->
+  <div class="page" data-page="2">
+    <div class="card">
+      <p class="kicker" style="color:var(--leaf);">Checking methods that apply anywhere</p>
+      <h2>Not just for AI — for anything you read online</h2>
+      <div class="rgrid">
+        <a class="rcard" href="https://hapgood.us/2019/06/19/sift-the-four-moves/" target="_blank" rel="noopener">
+          <span class="badge article" style="background:var(--leaf-tint);color:var(--leaf);">Article</span>
+          <p class="rcard-title">SIFT (The Four Moves)</p>
+          <p class="rcard-provider">Mike Caulfield · Hapgood (CC BY 4.0) · Intermediate · 10 min</p>
+          <p class="rcard-why">A widely-used, four-step method for checking any claim or source before you trust it.</p>
+          <div class="rcard-footer"><span>hapgood.us</span><span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+        <a class="rcard" href="https://simple.wikipedia.org/wiki/Wikipedia:Reliable_sources" target="_blank" rel="noopener">
+          <span class="badge article" style="background:var(--leaf-tint);color:var(--leaf);">Article</span>
+          <p class="rcard-title">Reliable sources, explained plainly</p>
+          <p class="rcard-provider">Wikipedia (Simple English) · Beginner · 6 min</p>
+          <p class="rcard-why">What makes any source trustworthy — useful for judging what an AI cites, or what you check it against.</p>
+          <div class="rcard-footer"><span>simple.wikipedia.org</span><span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: Go further -->
+  <div class="page" data-page="3">
+    <div class="card">
+      <p class="kicker" style="color:#B8790A;">Go further</p>
+      <h2>Depth, an Indian tool, and a video series</h2>
+      <div class="rgrid">
+        <a class="rcard" href="https://www.unesco.org/en/articles/ai-competency-framework-students" target="_blank" rel="noopener">
+          <span class="badge article">Article</span>
+          <p class="rcard-title">AI Competency Framework for Students</p>
+          <p class="rcard-provider">UNESCO · Intermediate · 20+ min</p>
+          <p class="rcard-why">The bigger global picture of responsible AI use, beyond this one course.</p>
+          <div class="rcard-footer"><span>unesco.org</span><span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+        <a class="rcard govt" href="https://factcheck.pib.gov.in/" target="_blank" rel="noopener">
+          <span class="badge govt">Government tool</span>
+          <p class="rcard-title">PIB Fact Check</p>
+          <p class="rcard-provider">Press Information Bureau, Govt. of India · Beginner · 2 min</p>
+          <p class="rcard-why">A real, free, official channel to verify claims about government schemes or policies.</p>
+          <div class="rcard-footer"><span>factcheck.pib.gov.in</span><span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+      </div>
+      <div class="rgrid single" style="margin-top:14px;">
+        <a class="rcard" href="https://thecrashcourse.com/topic/navigatingdigitalinfo/" target="_blank" rel="noopener">
+          <span class="badge video">Video</span>
+          <p class="rcard-title">Crash Course: Navigating Digital Information</p>
+          <p class="rcard-provider">PBS/Complexly, with MediaWise (Poynter) & Stanford · Beginner · ~13 min/episode</p>
+          <p class="rcard-why">A free, captioned video series that makes fact-checking and "lateral reading" concrete.</p>
+          <div class="rcard-footer"><span>thecrashcourse.com</span><span class="go">Open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 4: Quick reference (filterable) -->
+  <div class="page" data-page="4">
+    <div class="card">
+      <p class="kicker" style="color:var(--sky);">Quick reference</p>
+      <h2>All 8 resources, filterable</h2>
+      <div class="filter-row" id="formatFilters">
+        <button class="filter-chip active" data-format="all">All formats</button>
+        <button class="filter-chip" data-format="article">Article</button>
+        <button class="filter-chip" data-format="video">Video</button>
+        <button class="filter-chip" data-format="govt">Government tool</button>
+      </div>
+      <div class="filter-row" id="levelFilters">
+        <button class="filter-chip level active" data-level="all">All levels</button>
+        <button class="filter-chip level" data-level="Beginner">Beginner</button>
+        <button class="filter-chip level" data-level="Intermediate">Intermediate</button>
+      </div>
+      <p class="result-count" id="resultCount"></p>
+      <div class="rgrid" id="resourceGrid"></div>
+    </div>
+  </div>
+
+  <!-- PAGE 5: Production note -->
+  <div class="page" data-page="5">
+    <div class="prod-note">
+      <p class="kicker" style="color:var(--gold);">Production note · internal, not learner-facing</p>
+      <h2 style="color:#fff;">One QA step is still open</h2>
+      <p>These 8 resources were identified through research as official or institutionally credible and free to access. Per the section brief, no link should be published until a human has personally opened and checked each one on a mobile device, confirmed it stays free of paywalls or registration, and set a review date.</p>
+      <p><b>That mobile-verification step has not yet been done — please complete it before this list is signed off.</b></p>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <button class="nav-btn" id="backBtn" onclick="changePage(-1)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Back
+    </button>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8892C2;" id="pageCount">1 / 6</span>
+    <button class="nav-btn primary" id="nextBtn" onclick="changePage(1)">
+      Next
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <footer>
+    <span>Swift AI Academy</span>
+    <span>English · PC 4.1–4.5 · PC 5.1–5.4</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
